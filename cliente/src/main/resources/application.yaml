@@ -21,17 +21,13 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:https://eureka-hvy0.onrender.com}
-  instance:
-    prefer-ip-address: true
-
+      defaultZone: ${EUREKA_URL:https://eureka-hvy0.onrender.com/eureka/}
   instance:
     prefer-ip-address: false
-    hostname: ${EUREKA_INSTANCE_HOSTNAME} # Aquí pones la URL pública de tu cliente (ej: cliente.onrender.com)
+    hostname: ${EUREKA_INSTANCE_HOSTNAME:cliente.onrender.com}
     instance-id: ${spring.application.name}:${random.value}
     lease-renewal-interval-in-seconds: 10
     lease-expiration-duration-in-seconds: 30
-
 
 springdoc:
   api-docs:
