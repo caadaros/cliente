@@ -1,4 +1,4 @@
-package com.peluqueria.cliente;
+package com.peluqueria.cliente.TestService;
 
 import com.peluqueria.cliente.Model.Cliente;
 import com.peluqueria.cliente.Repository.ClienteRepository;
